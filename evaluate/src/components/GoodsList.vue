@@ -158,7 +158,7 @@ export default {
       goodsList :[],
       total:0,
       showDialogVisible:false,//产品编辑对话框
-      imageDownloadUrl :"http://81.71.91.145:8080/evaluate/product/image_download?product_id=",//图片下载
+      imageDownloadUrl :"http://150.109.150.224:8080/evaluate/product/image_download?product_id=",//图片下载
       previewSrcList :[],
       //添加产品
       addForm:{},

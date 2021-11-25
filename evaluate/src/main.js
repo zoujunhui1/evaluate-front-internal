@@ -17,7 +17,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
-axios.defaults.baseURL = 'http://81.71.91.145:8080'
+axios.defaults.baseURL = 'http://150.109.150.224:8080'
 // axios.defaults.baseURL = 'http://localhost:8080'
 axios.interceptors.request.use(config=>{
   //每次获取token放到header里
