@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h3>产品详情</h3>
+    <h3>Product Information</h3>
     <el-table :data="tableData" style="width: 100%">
       <el-table-column>
         <template slot-scope="props">
           <el-form label-position="left" inline class="demo-table-expand">
-            <el-form-item label="Product number">
+            <el-form-item label="product number">
               <span>{{ props.row.product_id }}</span>
             </el-form-item>
             <el-form-item label="name">
@@ -35,7 +35,7 @@
             <el-form-item label="result">
               <span>{{ props.row.identify_result }}</span>
             </el-form-item>
-            <el-form-item label="information">
+            <el-form-item label="background information">
               <span>{{ props.row.desc }}</span>
             </el-form-item>
           </el-form>
