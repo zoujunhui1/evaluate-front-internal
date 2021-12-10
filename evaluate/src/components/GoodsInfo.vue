@@ -5,37 +5,37 @@
       <el-table-column>
         <template slot-scope="props">
           <el-form label-position="left" inline class="demo-table-expand">
-            <el-form-item label="产品编号">
+            <el-form-item label="Product number">
               <span>{{ props.row.product_id }}</span>
             </el-form-item>
-            <el-form-item label="产品名称">
+            <el-form-item label="name">
               <span>{{ props.row.name }}</span>
             </el-form-item>
-            <el-form-item label="产品类别">
+            <el-form-item label="version">
               <span>{{ props.row.product_type }}</span>
             </el-form-item>
-            <el-form-item label="发行时间">
+            <el-form-item label="publish time">
               <span>{{ props.row.issue_time }}</span>
             </el-form-item>
-            <el-form-item label="面值">
+            <el-form-item label="denomination">
               <span>{{ props.row.denomination }}</span>
             </el-form-item>
-            <el-form-item label="版别">
+            <el-form-item label="version">
               <span>{{ props.row.product_version }}</span>
             </el-form-item>
-            <el-form-item label="尺寸">
+            <el-form-item label="size">
               <span> {{props.row.diameter}} * {{ props.row.thick }} mm</span>
             </el-form-item>
-            <el-form-item label="重量">
+            <el-form-item label="weight">
               <span>{{ props.row.weight }} g</span>
             </el-form-item>
-            <el-form-item label="评级分数">
+            <el-form-item label="score">
               <span>{{ infoEnumsList[props.row.score] }} {{infoEnumsList[props.row.level]}}</span>
             </el-form-item>
-            <el-form-item label="鉴定结果">
+            <el-form-item label="result">
               <span>{{ props.row.identify_result }}</span>
             </el-form-item>
-            <el-form-item label="背景资料">
+            <el-form-item label="information">
               <span>{{ props.row.desc }}</span>
             </el-form-item>
           </el-form>
