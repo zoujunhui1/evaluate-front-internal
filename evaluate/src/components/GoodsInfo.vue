@@ -5,37 +5,37 @@
       <el-table-column>
         <template slot-scope="props">
           <el-form label-position="left" inline class="demo-table-expand">
-            <el-form-item label="product number">
+            <el-form-item label="productId:">
               <span>{{ props.row.product_id }}</span>
             </el-form-item>
-            <el-form-item label="name">
+            <el-form-item label="name:">
               <span>{{ props.row.name }}</span>
             </el-form-item>
-            <el-form-item label="version">
+            <el-form-item label="version:">
               <span>{{ props.row.product_type }}</span>
             </el-form-item>
-            <el-form-item label="publish time">
+            <el-form-item label="publish time:">
               <span>{{ props.row.issue_time }}</span>
             </el-form-item>
-            <el-form-item label="denomination">
+            <el-form-item label="denomination:">
               <span>{{ props.row.denomination }}</span>
             </el-form-item>
-            <el-form-item label="version">
+            <el-form-item label="version:">
               <span>{{ props.row.product_version }}</span>
             </el-form-item>
-            <el-form-item label="size">
+            <el-form-item label="size:">
               <span> {{props.row.diameter}} * {{ props.row.thick }} mm</span>
             </el-form-item>
-            <el-form-item label="weight">
+            <el-form-item label="weight:">
               <span>{{ props.row.weight }} g</span>
             </el-form-item>
-            <el-form-item label="score">
+            <el-form-item label="score:">
               <span>{{ infoEnumsList[props.row.score] }} {{infoEnumsList[props.row.level]}}</span>
             </el-form-item>
-            <el-form-item label="result">
+            <el-form-item label="result:">
               <span>{{ props.row.identify_result }}</span>
             </el-form-item>
-            <el-form-item label="background information">
+            <el-form-item label="background information:">
               <span>{{ props.row.desc }}</span>
             </el-form-item>
           </el-form>
