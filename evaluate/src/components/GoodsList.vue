@@ -338,10 +338,9 @@ export default {
     //打印
     printImage(image) {
       this.$print({
-        printable: [image],
+        printable: image,
         type: 'image',
-        // header: 'Multiple Images',
-        // targetStyles: ['*'], // 打印内容使用所有HTML样式，没有设置这个属性/值，设置分页打印没有效果
+        imageStyle: 'width:100%;height:100%;'
       })
     },
     //查看详情跳转
