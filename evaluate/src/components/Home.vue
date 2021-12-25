@@ -77,11 +77,11 @@ export default {
               "auth_name":"配置列表",
               "path":"config_list",
             },
-            {
-              "id":13,
-              "auth_name":"批量打印",
-              "path":"batch_print",
-            },
+            // {
+            //   "id":13,
+            //   "auth_name":"批量打印",
+            //   "path":"batch_print",
+            // },
           ]
         },
        // {
