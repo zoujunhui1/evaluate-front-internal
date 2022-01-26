@@ -14,7 +14,7 @@
         <el-input v-model="queryParams.product_id_end"></el-input>
       </el-form-item>
       <el-button type="primary" v-on:click="search">查询</el-button>
-      <el-button type="primary" v-on:click="printHtml">全部打印</el-button>
+      <el-button type="primary" v-on:click="printHtml(productList)">全部打印</el-button>
     </el-form>
   </div>
 </template>
@@ -47,10 +47,14 @@ export default {
         this.productList = res.data.list
       })
     },
-    printHtml(){
+    printHtml(product){
+	   const urls = [];
+        for (let i = 0; i < product.length; i++) {
+          urls.push(product[i].text_url)
+        }
       this.$print({
-        printable: 'printBox',
-        type: 'html',
+        printable: 'urls',
+        type: 'image',
         header: '',
         targetStyles: ['*'], // 打印内容使用所有HTML样式，没有设置这个属性/值，设置分页打印没有效果
       })
